@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-style: oblique;
+            /*Medidas absolutas
+              cm, mm, in, px, pt, pc
+              
+              Medidas relativas
+              em, ex, rem, vw, vh, %
+              16px geralmente equivalem à 1em
+            */
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            font-weight: 600;
+            font-size: 3em;
+
+            /*ligher, normal, bold, bolder*/
+
+            font-style: italic;
+        }
+        h2{
+            /*shorthand font
+             - font style -> font weight -> font size -> font family
+
+             font-style: italic;
+             font-weight: bolder; 
+             font-size: 2em;
+             font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            */
+            
+            font: italic bolder 2em Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam vero recusandae quod corrupti quibusdam deserunt repellat provident tempore. Voluptate dignissimos harum explicabo hic repellendus assumenda totam, impedit sed vel voluptatem!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fugiat doloribus dolore reiciendis alias optio, fugit vitae minus temporibus cupiditate expedita officia quia distinctio, sequi ratione nesciunt quidem voluptatem cum.
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos neque, consequatur deleniti mollitia culpa reiciendis. Ad consectetur ex adipisci voluptate blanditiis possimus recusandae dolorum facilis iusto! Unde, id soluta. Tenetur!</p>
+    <h2> Subtítulo do exercício </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt illo earum voluptatum modi rem, fugiat aspernatur vitae dolores enim minus quas voluptates voluptate praesentium laborum suscipit laudantium iusto numquam.</p>
+</body>
+</html>
