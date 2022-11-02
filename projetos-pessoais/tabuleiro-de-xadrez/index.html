@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuleiro de Xadrez</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(background.jpg);
+            background-attachment: fixed;
+        }
+        
+        h1{
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+            color: white;
+            text-shadow: 1px 2px 2px black;
+            
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: auto;
+          
+            
+        }
+
+        td{
+            text-align: center;
+            width: 90px;
+            height: 90px;
+            border: 1px solid black;
+            background-color: rgb(160, 86, 64);
+            border-style: groove;
+            border-width: 5px;
+            border-color: rgb(146, 146, 146);
+           
+        }
+        .remover{
+            background-color: rgb(255, 223, 185);
+        }
+
+        div{
+            border-style: groove;
+            border-width: 40px;
+            border-color:  rgb(201, 169, 132);
+            max-width: 780px;
+            margin: auto;
+        }
+
+        .imagem{
+            max-width: 90px;
+            max-height: 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabuleiro de Xadrez</h1>
+            <div>
+        <table>
+                    <tr>
+                        <td class="remover"><img class="imagem" src="torre-preta.png" alt="torre preta"></td>
+                        <td><img class="imagem" src="cavalo-preto.png" alt="cavalo preto"></td>
+                        <td class="remover"><img class="imagem" src="bispo-preto.png" alt="bispo preto"></td>
+                        <td><img class="imagem" src="rei-preto.png" alt="rei preto"></td>
+                        <td class="remover"><img class="imagem" src="rainha-preta.png" alt="rainha preta"></td>
+                        <td><img class="imagem" src="bispo-preto.png" alt="bispo preto"></td>
+                        <td class="remover"><img class="imagem" src="cavalo-preto.png" alt="cavalo preto"></td>
+                        <td><img class="imagem" src="torre-preta.png" alt="torre preta"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                        <td class="remover"><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                        <td><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                        <td class="remover"><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                        <td><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                        <td class="remover"><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                        <td><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                        <td class="remover"><img class="imagem" src="peao-preto.png" alt="peão preto"></td>
+                    </tr>
+                    <tr>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                    </tr>
+                    <tr>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                        <td></td>
+                        <td class="remover"></td>
+                    </tr>
+                    <tr>
+                        <td class="remover"><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                        <td><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                        <td class="remover"><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                        <td><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                        <td class="remover"><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                        <td><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                        <td class="remover"><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                        <td><img class="imagem" src="peao-branco.png" alt="peão branco"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="imagem" src="torre-branca.png" alt="torre branca"></td>
+                        <td class="remover"><img class="imagem" src="cavalo-branco.png" alt="cavalo branco"></td>
+                        <td><img class="imagem" src="bispo-branco.png" alt="bisco branco"></td>
+                        <td class="remover"><img class="imagem" src="rei-branco.png" alt="rei branco"></td>
+                        <td><img class="imagem" src="rainha-branca.png" alt="rainha branca"></td>
+                        <td class="remover"><img class="imagem" src="bispo-branco.png" alt="bispo branco"></td>
+                        <td><img class="imagem" src="cavalo-branco.png" alt="cavalo branco"></td>
+                        <td class="remover"><img class="imagem" src="torre-branca.png" alt="torre branca"></td>
+                    </tr>
+                </table>
+            </div>
+</body>
+</html>
