@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Opinião</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Pesquisa de Opinião</h1>
+        <p>Nessa pesquisa você será questionado sobre o produto X. Esse produto é vendido em todo o país nas perfumarias, lojas de departamento, internet entre outros. Responda as questões abaixo de acordo com a sua opinião.</p>
+            <form method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <p id="info-pessoal">
+                        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required><br>
+                        <input type="number" name="idade" id="idade" placeholder="Digite a sua idade" required><br>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email" required><br>
+                        <p>
+                            <label for="data">Data de nascimento</label><br>
+                            <input type="date" name="data" id="data" required>
+                        </p>
+                        <p>
+                            <label for="senha">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+                            <input type="password" name="senha" id="senha" placeholder="Digite uma senha" required minlength="5" maxlength="15">
+                        </p>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Aspecto do produto</legend>
+                    <p>
+                        <label for="cor">Selecione a cor do produto após 6 meses de uso:</label><br>
+                        <input type="color" name="cor" id="cor" value="#ffffff">
+                    </p>
+                    <p>
+                        <label for="arquivo">Adicione uma foto do seu produto</label><br>
+                        <input type="file" name="arquivo" id="arquivo">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opinião quanto a utilização</legend>
+                    <p>
+                        Você gosta do cheiro do produto?<br>
+                        <input type="radio" name="opcao" id="g-m" required>
+                        <label for="g-m">Gosto Muito</label><br>
+                        <input type="radio" name="opcao" id="g">
+                        <label for="g">Gosto</label><br>
+                        <input type="radio" name="opcao" id="n-s">
+                        <label for="n-s">Não Sei</label><br>
+                        <input type="radio" name="opcao" id="n-g">
+                        <label for="n-g">Não Gosto</label><br>
+                        <input type="radio" name="opcao" id="o">
+                        <label for="o">Odeio</label>
+                    </p>
+                    <p>
+                        Marque as características de produto que mais gosta<br>
+                        <input type="checkbox" name="fixaxao" id="fix">
+                        <label for="fix">fixaxão</label><br>
+                        <input type="checkbox" name="textura" id="tex">
+                        <label for="tex">textura</label><br>
+                        <input type="checkbox" name="cheiro" id="chei">
+                        <label for="chei">cheiro</label><br>
+                        <input type="checkbox" name="color" id="color"><label for="color">cor</label><br>
+                        <input type="checkbox" name="embalagem" id="emb"><label for="emb">embalagem</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nível de satisfação</legend>
+                    <p>Coloque nessa escala o seu nível de satisfação geral do produto</p>
+                    <input type="range" name="nivel" id="level">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opiniões</legend>
+                    <textarea required style="resize: none;" name="mensagem" id="mensagem" cols="90" rows="8" placeholder="Digite abaixo sua opinião geral para esse produto..."></textarea>
+                </fieldset><br>
+                <input type="submit" value="Gravar respostas">
+            </form>
+    </main>
+</body>
+</html>

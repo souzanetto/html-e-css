@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Courier, monospace
+}
+
+main{
+    padding: 2%;
+    max-width: 900px;
+    margin: auto;
+}
+#info-pessoal input{
+    margin-top: 15px;
+}
