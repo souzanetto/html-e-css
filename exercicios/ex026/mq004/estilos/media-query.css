@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* Todas as mídias 
+------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+#phone{ display:none}
+#tablet{ display: block; margin: auto;}
+#print{ display: none;}
+#pc{ display: none;}
+#tv{display: none;}
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+#phone{display: none;}
+#tablet{ display: none;}
+#print{ display: none;}
+#pc{ display: block; margin: auto;}
+#tv{display: none;}
+}
+
+/*TV*/
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+#phone{ display: none;}
+#tablet{ display: none;}
+#print{ display: none;}
+#pc{ display: none;}
+#tv{display: block; margin: auto;}
+
+main{
+    width: 40vw;
+}
+}
+
+@media print {
+
+    main , h1{
+        text-shadow: none;
+        color:black;
+        border: 1px solid black;
+        font-family:'Courier New', Courier, monospace;
+    }
+    main::after{
+        padding: 10px;
+        content: "Esse site foi criado por Souza Netto";
+    }
+}
+
